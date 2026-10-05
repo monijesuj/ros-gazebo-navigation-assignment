@@ -1,0 +1,97 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+Visualization Manager:
+  Class: ""
+  Global Options:
+    Background Color: 245; 247; 250
+    Fixed Frame: map
+    Frame Rate: 20
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Grid
+      Enabled: true
+      Cell Size: 1
+      Plane Cell Count: 20
+      Color: 170; 175; 185
+    - Class: rviz_default_plugins/Map
+      Name: Live occupancy map
+      Enabled: true
+      Topic:
+        Value: /map
+        Durability Policy: Transient Local
+        Reliability Policy: Reliable
+        History Policy: Keep Last
+        Depth: 1
+      Alpha: 0.65
+      Color Scheme: map
+    - Class: rviz_default_plugins/RobotModel
+      Name: Robot
+      Enabled: true
+      Description Source: Topic
+      Description Topic:
+        Value: /robot_description
+        Durability Policy: Transient Local
+        Reliability Policy: Reliable
+        History Policy: Keep Last
+        Depth: 1
+    - Class: rviz_default_plugins/LaserScan
+      Name: Lidar
+      Enabled: true
+      Topic:
+        Value: /scan
+        Reliability Policy: Best Effort
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Depth: 5
+      Size (m): 0.035
+      Style: Points
+      Color Transformer: FlatColor
+      Color: 215; 45; 35
+    - Class: rviz_default_plugins/Path
+      Name: A star planned route
+      Enabled: true
+      Topic:
+        Value: /planned_path
+        Durability Policy: Transient Local
+        Reliability Policy: Reliable
+        History Policy: Keep Last
+        Depth: 1
+      Color: 35; 110; 235
+      Line Style: Lines
+      Line Width: 0.04
+    - Class: rviz_default_plugins/Path
+      Name: Travelled route
+      Enabled: true
+      Topic:
+        Value: /travelled_path
+        Reliability Policy: Reliable
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Depth: 5
+      Color: 15; 165; 70
+      Line Style: Lines
+      Line Width: 0.04
+    - Class: rviz_default_plugins/Image
+      Name: Astra RGB camera
+      Enabled: true
+      Topic:
+        Value: /camera/image
+        Reliability Policy: Best Effort
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Depth: 2
+      Normalize Range: true
+  Views:
+    Current:
+      Class: rviz_default_plugins/TopDownOrtho
+      Name: Top down
+      Scale: 40
+      X: 0
+      Y: 0
+      Angle: 0
+Window Geometry:
+  Width: 960
+  Height: 1000
+  X: 960
+  Y: 0

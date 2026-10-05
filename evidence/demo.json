@@ -1,0 +1,11 @@
+{
+  "capture": "actual Gazebo and RViz X11 windows",
+  "frames": 664,
+  "fps": 12,
+  "wall_seconds": 60.214174178003304,
+  "speed_note": "Frames captured at 12 fps; software rendering may reduce simulation real-time factor. No path animation or fabricated sensor data.",
+  "captured_video_seconds": 55.333333333333336,
+  "final_hold_seconds": 6,
+  "video_seconds": 61.333333333333336,
+  "editing_note": "A six-second hold of the final recorded frame was appended so the outcome can be read. The complete route is the original continuous recording."
+}
