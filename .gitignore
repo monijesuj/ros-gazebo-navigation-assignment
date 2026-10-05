@@ -7,3 +7,6 @@ __pycache__/
 *.pyc
 evidence/bag_*/
 evidence/*.mp4
+
+evidence/mission_report.json
+work/

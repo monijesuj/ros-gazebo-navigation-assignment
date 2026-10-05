@@ -21,6 +21,7 @@ class Monitor(Node):
         self.create_subscription(TFMessage,'/world/navigation/dynamic_pose/info',self.ground_truth,qos_profile_sensor_data)
         for link in ('base_link','left_wheel','right_wheel'):
             self.create_subscription(Contacts,'/contacts/'+link,self.contacts,qos_profile_sensor_data)
+        self.verification=self.create_publisher(String,'/mission/verification',10)
         self.create_subscription(String,'/mission/status',self.status,10)
     def ground_truth(self,msg):
         for transform in msg.transforms:
@@ -43,6 +44,7 @@ class Monitor(Node):
         data['contact_sensor_messages']=self.contact_frames
         data['obstacle_contact_frames']=self.obstacle_contact_frames
         Path(self.get_parameter('report_file').value).write_text(json.dumps(data,indent=2)+'\n')
+        result=String();result.data=json.dumps(data);self.verification.publish(result)
         if data['state']=='SUCCEEDED' and not hasattr(self,'reported'):
             self.reported=True
             self.get_logger().info(f"Finish: {data['ground_truth_goal_error_m']} m; obstacle contacts: {self.obstacle_contact_frames}")

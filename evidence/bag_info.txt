@@ -1,23 +1,21 @@
-
-Files:             bag_20261005_212826_0.db3
-Bag size:          72.3 MiB
-Storage id:        
-Duration:          23.446160374s
-Start:             Oct  5 2026 21:28:26.836154458 (1791224906.836154458)
-End:               Oct  5 2026 21:28:50.282314832 (1791224930.282314832)
-Messages:          13206
-Topic information: Topic: /camera/camera_info | Type: sensor_msgs/msg/CameraInfo | Count: 235 | Serialization Format: cdr
-                   Topic: /camera/depth_image | Type: sensor_msgs/msg/Image | Count: 235 | Serialization Format: cdr
-                   Topic: /clock | Type: rosgraph_msgs/msg/Clock | Count: 4685 | Serialization Format: cdr
-                   Topic: /cmd_vel | Type: geometry_msgs/msg/Twist | Count: 468 | Serialization Format: cdr
-                   Topic: /gps/fix | Type: sensor_msgs/msg/NavSatFix | Count: 117 | Serialization Format: cdr
-                   Topic: /joint_states | Type: sensor_msgs/msg/JointState | Count: 4684 | Serialization Format: cdr
-                   Topic: /map | Type: nav_msgs/msg/OccupancyGrid | Count: 24 | Serialization Format: cdr
-                   Topic: /mission/status | Type: std_msgs/msg/String | Count: 23 | Serialization Format: cdr
-                   Topic: /odom | Type: nav_msgs/msg/Odometry | Count: 669 | Serialization Format: cdr
-                   Topic: /planned_path | Type: nav_msgs/msg/Path | Count: 2 | Serialization Format: cdr
-                   Topic: /scan | Type: sensor_msgs/msg/LaserScan | Count: 234 | Serialization Format: cdr
-                   Topic: /tf | Type: tf2_msgs/msg/TFMessage | Count: 1806 | Serialization Format: cdr
+Files:             bag_launch_20261005_213348_0.db3
+Bag size:          214.4 MiB
+Storage id:        sqlite3
+Duration:          73.387730191s
+Start:             Oct  5 2026 21:33:48.913517106 (1791225228.913517106)
+End:               Oct  5 2026 21:35:02.301247297 (1791225302.301247297)
+Messages:          25684
+Topic information: Topic: /camera/camera_info | Type: sensor_msgs/msg/CameraInfo | Count: 707 | Serialization Format: cdr
+                   Topic: /camera/depth_image | Type: sensor_msgs/msg/Image | Count: 706 | Serialization Format: cdr
+                   Topic: /clock | Type: rosgraph_msgs/msg/Clock | Count: 14120 | Serialization Format: cdr
+                   Topic: /cmd_vel | Type: geometry_msgs/msg/Twist | Count: 1412 | Serialization Format: cdr
+                   Topic: /gps/fix | Type: sensor_msgs/msg/NavSatFix | Count: 354 | Serialization Format: cdr
+                   Topic: /map | Type: nav_msgs/msg/OccupancyGrid | Count: 71 | Serialization Format: cdr
+                   Topic: /mission/status | Type: std_msgs/msg/String | Count: 71 | Serialization Format: cdr
+                   Topic: /mission/verification | Type: std_msgs/msg/String | Count: 71 | Serialization Format: cdr
+                   Topic: /odom | Type: nav_msgs/msg/Odometry | Count: 2017 | Serialization Format: cdr
+                   Topic: /planned_path | Type: nav_msgs/msg/Path | Count: 4 | Serialization Format: cdr
+                   Topic: /scan | Type: sensor_msgs/msg/LaserScan | Count: 706 | Serialization Format: cdr
+                   Topic: /tf | Type: tf2_msgs/msg/TFMessage | Count: 5373 | Serialization Format: cdr
                    Topic: /tf_static | Type: tf2_msgs/msg/TFMessage | Count: 1 | Serialization Format: cdr
-                   Topic: /travelled_path | Type: nav_msgs/msg/Path | Count: 23 | Serialization Format: cdr
-
+                   Topic: /travelled_path | Type: nav_msgs/msg/Path | Count: 71 | Serialization Format: cdr

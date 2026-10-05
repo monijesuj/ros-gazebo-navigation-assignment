@@ -1,4 +1,5 @@
 import os
+from datetime import datetime
 from pathlib import Path
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, ExecuteProcess, SetEnvironmentVariable
@@ -13,7 +14,7 @@ def generate_launch_description():
     share=Path(get_package_share_directory('robot_demo'))
     gui, rviz, autostart = [LaunchConfiguration(n) for n in ('gui','rviz','autostart')]
     mission=LaunchConfiguration('mission_file'); report=LaunchConfiguration('report_file')
-    args=[DeclareLaunchArgument('gui',default_value='true'),DeclareLaunchArgument('rviz',default_value='true'),DeclareLaunchArgument('autostart',default_value='true'),DeclareLaunchArgument('mission_file',default_value=str(share/'config/mission.json')),DeclareLaunchArgument('report_file',default_value=str(Path.cwd()/'mission_report.json'))]
+    args=[DeclareLaunchArgument('record_bag',default_value='false'),DeclareLaunchArgument('gui',default_value='true'),DeclareLaunchArgument('rviz',default_value='true'),DeclareLaunchArgument('autostart',default_value='true'),DeclareLaunchArgument('mission_file',default_value=str(share/'config/mission.json')),DeclareLaunchArgument('report_file',default_value=str(Path.cwd()/'mission_report.json'))]
     common={'use_sim_time':True}
     simulator=ExecuteProcess(cmd=['ign','gazebo','-r',PythonExpression(["'' if '",gui,"' == 'true' else '-s'"]),str(share/'worlds/navigation.sdf')],output='screen')
     # Distinct sensor bridges give every ROS stream its correct URDF frame.
@@ -26,4 +27,5 @@ def generate_launch_description():
       Node(package='robot_state_publisher',executable='robot_state_publisher',parameters=[{**common,'robot_description':(share/'urdf/rover.urdf').read_text()}]),
       Node(package='robot_demo',executable='navigator',parameters=[{**common,'mission_file':mission,'autostart':ParameterValue(autostart,value_type=bool)}],output='screen'),
       Node(package='robot_demo',executable='monitor',parameters=[{**common,'mission_file':mission,'report_file':report}],output='screen'),
+      ExecuteProcess(cmd=['ros2','bag','record','-o',str(Path.cwd()/'evidence'/('bag_launch_'+datetime.now().strftime('%Y%m%d_%H%M%S'))),'/clock','/tf','/tf_static','/odom','/scan','/gps/fix','/camera/depth_image','/camera/camera_info','/cmd_vel','/map','/planned_path','/travelled_path','/mission/status','/mission/verification'],condition=IfCondition(LaunchConfiguration('record_bag')),output='screen'),
       Node(package='rviz2',executable='rviz2',arguments=['-d',str(share/'config/demo.rviz')],parameters=[common],condition=IfCondition(rviz))])

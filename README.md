@@ -80,6 +80,7 @@ The generator preserves the mission JSON, creates the URDF and world, and uses `
 | `/planned_path` | `nav_msgs/Path` | On planning, transient local |
 | `/travelled_path` | `nav_msgs/Path` | 1 Hz |
 | `/mission/status` | `std_msgs/String` with JSON | 1 Hz |
+| `/mission/verification` | `std_msgs/String` with independent verification JSON | 1 Hz |
 | `/world/navigation/dynamic_pose/info` | `tf2_msgs/TFMessage` | Verification only |
 | `/contacts/{base_link,left_wheel,right_wheel}` | `ros_gz_interfaces/Contacts` | Verification only |
 
@@ -97,11 +98,19 @@ Tests check GPS conversion, a safe detour through the supplied world, occupied/o
 
 The recorded run reached B in **43.5 simulation seconds**, with **0.198 m ground-truth goal error**, **0.487 m minimum clearance** of the enclosing robot circle, and **zero obstacle contact frames**. All seven planner tests passed. The video is approximately **61 seconds**, including a six-second hold of its final frame for reading the result.
 
+The downloadable [release](https://github.com/monijesuj/ros-gazebo-navigation-assignment/releases/tag/v1.0.0) includes the video and an optional complete ROS bag from a second verified run. The bag contains `SUCCEEDED` in both mission and independent verification messages, with a final zero velocity command. Its results are saved in `evidence/verified_bag_mission.json`.
+
 The repository includes the actual recorded-run JSON in `evidence/verified_mission.json`, the test log in `evidence/unit_tests.txt`, and video capture details in `evidence/demo.json`. The supplied video records real Gazebo and RViz windows; its captions read the live monitor report. The evidence is specific to this simulated world and is not a guarantee for arbitrary environments.
 
 ## Recording and inspection
 
-Record a ROS bag in a second terminal:
+Record the entire mission with the same launch command:
+
+```bash
+./run.sh record_bag:=true
+```
+
+Alternatively, record in a second terminal:
 
 ```bash
 ./scripts/record_bag.sh

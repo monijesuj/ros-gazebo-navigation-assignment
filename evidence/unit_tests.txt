@@ -7,6 +7,6 @@ test_safe_detour_and_no_corner_cut (test_planning.PlanningTests) ... ok
 test_unreachable_goal (test_planning.PlanningTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 7 tests in 0.255s
+Ran 7 tests in 0.159s
 
 OK
