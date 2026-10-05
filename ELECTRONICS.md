@@ -1,5 +1,7 @@
 # Sensor connection and power on Raspberry Pi 5
 
+**Language / Язык:** English · [Русский](ELECTRONICS.ru.md) · [Home](README.md)
+
 These answers describe a practical integration approach. Exact supply voltage, current, pinout and software support must be checked for the particular Astra and GNSS receiver selected.
 
 ## 1 Connecting the sensors

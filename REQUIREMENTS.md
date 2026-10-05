@@ -1,5 +1,7 @@
 # Assignment conditions → implementation and evidence
 
+**Language / Язык:** English · [Русский](REQUIREMENTS.ru.md) · [Home](README.md)
+
 This checklist refers to the supplied “Программист робота (ROS/Gazebo)” assignment. The optional robot alternatives and ROS/simulator alternatives are choices, rather than a requirement to implement every stack. This submission uses **ROS 2 Humble + Gazebo Fortress (Ignition)** and goes beyond the robot/world selection requirement.
 
 | Condition | Status | How / where to inspect |

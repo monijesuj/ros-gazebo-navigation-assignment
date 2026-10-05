@@ -1,5 +1,7 @@
 # Third-party notices and adaptations
 
+**Language / Язык:** English · [Русский](THIRD_PARTY.ru.md) · [Home](README.md)
+
 The application's own code is MIT. Vendored upstream descriptions and meshes keep their original licenses; the project's MIT license does not replace those terms.
 
 | Asset | Upstream revision | License / retained notice |

@@ -1,12 +1,14 @@
 # Autonomous GPS navigation — ROS 2 Humble + Gazebo Fortress
 
+**Язык / Language:** [Русская документация](README.ru.md) · English
+
 A mobile robot drives from **A (-5, -3 m)** to **B (5, 3 m)**, discovers obstacles with a 2D lidar, builds an occupancy map, plans a safe route and stops at the GPS waypoint. An Astra-like RGB-D camera supplies a separate forward obstacle check. Choose **custom rover, TurtleBot3 Burger or Jackal**, and **obstacle course, warehouse or outdoor yard**.
 
 **Ubuntu 22.04 · ROS 2 Humble · Gazebo Fortress / Ignition Gazebo 6 · Python**
 
-[Русский быстрый старт](README.ru.md) · [Requirements and evidence](REQUIREMENTS.md) · [Measured results](VALIDATION.md) · [Architecture and interview notes](DESIGN.md) · [Electronics bonus](ELECTRONICS.md)
+[Requirements and evidence](REQUIREMENTS.md) · [Measured results](VALIDATION.md) · [Architecture and interview notes](DESIGN.md) · [Electronics bonus](ELECTRONICS.md)
 
-[Download v2.0.0: source archive, video and optional ROS bag](https://github.com/monijesuj/ros-gazebo-navigation-assignment/releases/tag/v2.0.0). The offline source archive also includes `evidence/demo.mp4`. The repository is private; reviewers need access or the archives.
+[Download v2.0.1: source archive, video and optional ROS bag](https://github.com/monijesuj/ros-gazebo-navigation-assignment/releases/tag/v2.0.1). The offline source archive also includes `evidence/demo.mp4`. The repository is private; reviewers need access or the archives.
 
 ![Recorded Gazebo and RViz demonstration](evidence/demo_preview.png)
 

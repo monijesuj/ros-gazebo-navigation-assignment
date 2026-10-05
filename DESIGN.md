@@ -1,5 +1,7 @@
 # Design notes and discussion guide
 
+**Language / Язык:** English · [Русский](DESIGN.ru.md) · [Home](README.md)
+
 ## What the demonstration proves
 
 The supplied robots consume actual simulator sensors, build a map from lidar rays, reach a geographic target through a custom planner/controller, and are checked by an independent Gazebo truth/contact monitor. The implementation favors a small, inspectable ROS 2 system whose behavior can be explained and reproduced. It does not establish hardware readiness or robust navigation in arbitrary unknown/dynamic environments.

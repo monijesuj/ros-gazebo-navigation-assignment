@@ -1,5 +1,7 @@
 # Measured validation — v2.0.0
 
+**Language / Язык:** English · [Русский](VALIDATION.ru.md) · [Home](README.md)
+
 These are actual Gazebo physics/sensor runs on **ROS 2 Humble + Gazebo Fortress**, captured on 5 October 2026. The simulator truth/contact stream is used only by the independent verifier, never by navigation. Source/configuration is archived with these results.
 
 ## Robot × world matrix
