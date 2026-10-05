@@ -54,7 +54,7 @@ The verified image uses Ubuntu 22.04, Python 3.10.12, Fortress library 6.18.0 an
 
 ## Video and replay bag
 
-The [60-second demonstration](evidence/demo.mp4) records actual Gazebo + RViz windows with captions read from the live report. The robot reaches B with **0.191 m** actual error and **0** obstacle contacts. The sensor-built map contains **13053** observed cells. [Hero run report](evidence/hero_mission.json) · [Preview](evidence/demo_preview.png).
+The [60-second demonstration](https://github.com/monijesuj/ros-gazebo-navigation-assignment/releases/download/v2.0.0/demo.mp4) records actual Gazebo + RViz windows with captions read from the live report. The robot reaches B with **0.191 m** actual error and **0** obstacle contacts. The sensor-built map contains **13053** observed cells. [Hero run report](evidence/hero_mission.json) · [Preview](evidence/demo_preview.png).
 
 Video frames are encoded at 12 fps; the 69.51 s capture wall time becomes 60.00 s playback (about 1.16× wall speed). Capture throughput varies, and simulation time is separate. No sensor data or robot motion was fabricated. [Timing metadata](evidence/demo.json).
 

@@ -6,6 +6,8 @@ A mobile robot drives from **A (-5, -3 m)** to **B (5, 3 m)**, discovers obstacl
 
 [Русский быстрый старт](README.ru.md) · [Requirements and evidence](REQUIREMENTS.md) · [Measured results](VALIDATION.md) · [Architecture and interview notes](DESIGN.md) · [Electronics bonus](ELECTRONICS.md)
 
+[Download v2.0.0: source archive, video and optional ROS bag](https://github.com/monijesuj/ros-gazebo-navigation-assignment/releases/tag/v2.0.0). The offline source archive also includes `evidence/demo.mp4`. The repository is private; reviewers need access or the archives.
+
 ![Recorded Gazebo and RViz demonstration](evidence/demo_preview.png)
 
 ## Run
