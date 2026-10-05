@@ -20,6 +20,22 @@ Power the Pi 5 through USB-C from a regulator/PD source that supports its requir
 
 Provide the correct regulated voltage for each sensor and the powered USB hub. Use an intentional ground layout, short power wiring, adequate decoupling, filtering and motor transient suppression. Size wiring, fuses and converters for peak current, including motor stall current; verify these with measurements. Keep a motor emergency stop that leaves the control electronics powered. Use a battery monitor and shut the Pi down cleanly before low-voltage cutoff. Battery runtime can be estimated from usable watt-hours divided by measured total average power, allowing for DC/DC losses.
 
+```mermaid
+flowchart LR
+    B[Protected battery + BMS] --> F[Main fuse + disconnect]
+    F --> M[Motor branch fuse + emergency stop]
+    M --> D[Motor driver]
+    F --> E[Electronics branch fuse]
+    E --> P[Regulated USB-C / PD supply]
+    P --> R[Raspberry Pi 5]
+    E --> H[Correct regulated supply + powered USB hub]
+    H --> C[Astra + USB GNSS]
+    E --> U[Correct sensor / MCU regulator]
+    U --> S[Ultrasonic / UART GNSS / MCU]
+```
+
+Use the actual devices' ratings to select each branch; USB connection carries data as well as the intended power arrangement. Signal grounds are shared intentionally, with motor return current routed away from sensitive electronics. This is a conceptual architecture, not a construction-ready battery circuit.
+
 ## 3 Testing without ROS
 
 - **Astra:** check `lsusb`, USB link speed and kernel logs, then run the manufacturer's viewer or an SDK sample. Verify RGB and depth frame rates, valid depth pixels, and distances to measured targets. Use `v4l2-ctl` only for interfaces actually exposed as UVC; a proprietary depth stream needs the vendor SDK.

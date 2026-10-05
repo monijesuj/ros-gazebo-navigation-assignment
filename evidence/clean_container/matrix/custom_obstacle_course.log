@@ -1,0 +1,62 @@
+[INFO] [launch]: All log files can be found below /demo/.runtime/log/2026-10-05-20-15-02-978452-a8c14ba4f5d3-28
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [ign-1]: process started with pid [48]
+[INFO] [parameter_bridge-2]: process started with pid [50]
+[INFO] [parameter_bridge-3]: process started with pid [52]
+[INFO] [parameter_bridge-4]: process started with pid [54]
+[INFO] [parameter_bridge-5]: process started with pid [56]
+[INFO] [parameter_bridge-6]: process started with pid [58]
+[INFO] [parameter_bridge-7]: process started with pid [60]
+[INFO] [robot_state_publisher-8]: process started with pid [62]
+[INFO] [localizer-9]: process started with pid [64]
+[INFO] [mapper-10]: process started with pid [66]
+[INFO] [navigator-11]: process started with pid [68]
+[INFO] [guard-12]: process started with pid [70]
+[INFO] [monitor-13]: process started with pid [72]
+[robot_state_publisher-8] [INFO] [1791231303.304325783] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-8] [INFO] [1791231303.305858190] [robot_state_publisher]: got segment camera_link
+[robot_state_publisher-8] [INFO] [1791231303.305900393] [robot_state_publisher]: got segment camera_optical_link
+[robot_state_publisher-8] [INFO] [1791231303.305909150] [robot_state_publisher]: got segment chassis_link
+[robot_state_publisher-8] [INFO] [1791231303.305914693] [robot_state_publisher]: got segment front_caster
+[robot_state_publisher-8] [INFO] [1791231303.305919511] [robot_state_publisher]: got segment gps_link
+[robot_state_publisher-8] [INFO] [1791231303.305924256] [robot_state_publisher]: got segment imu_link
+[robot_state_publisher-8] [INFO] [1791231303.305928884] [robot_state_publisher]: got segment left_wheel
+[robot_state_publisher-8] [INFO] [1791231303.305934040] [robot_state_publisher]: got segment lidar_link
+[robot_state_publisher-8] [INFO] [1791231303.305939492] [robot_state_publisher]: got segment rear_caster
+[robot_state_publisher-8] [INFO] [1791231303.305944357] [robot_state_publisher]: got segment right_wheel
+[parameter_bridge-7] [INFO] [1791231303.347387014] [imu_bridge]: Creating GZ->ROS Bridge: [/imu/data (ignition.msgs.IMU) -> /imu/data (sensor_msgs/msg/Imu)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791231303.364755983] [lidar_bridge]: Creating GZ->ROS Bridge: [/scan (ignition.msgs.LaserScan) -> /scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1791231303.369278005] [motion_bridge]: Creating GZ->ROS Bridge: [/clock (ignition.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1791231303.370397481] [motion_bridge]: Creating ROS->GZ Bridge: [/cmd_vel (geometry_msgs/msg/Twist) -> /cmd_vel (ignition.msgs.Twist)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1791231303.371553140] [verification_bridge]: Creating GZ->ROS Bridge: [/world/navigation/dynamic_pose/info (ignition.msgs.Pose_V) -> /world/navigation/dynamic_pose/info (tf2_msgs/msg/TFMessage)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1791231303.372863743] [motion_bridge]: Creating GZ->ROS Bridge: [/odom (ignition.msgs.Odometry) -> /odom (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1791231303.374963684] [verification_bridge]: Creating GZ->ROS Bridge: [/contacts/base_link (ignition.msgs.Contacts) -> /contacts/base_link (ros_gz_interfaces/msg/Contacts)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1791231303.375291903] [motion_bridge]: Creating GZ->ROS Bridge: [/tf (ignition.msgs.Pose_V) -> /tf (tf2_msgs/msg/TFMessage)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1791231303.377006856] [verification_bridge]: Creating GZ->ROS Bridge: [/contacts/left_wheel (ignition.msgs.Contacts) -> /contacts/left_wheel (ros_gz_interfaces/msg/Contacts)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1791231303.378063087] [motion_bridge]: Creating GZ->ROS Bridge: [/joint_states (ignition.msgs.Model) -> /joint_states (sensor_msgs/msg/JointState)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1791231303.379313870] [verification_bridge]: Creating GZ->ROS Bridge: [/contacts/right_wheel (ignition.msgs.Contacts) -> /contacts/right_wheel (ros_gz_interfaces/msg/Contacts)] (Lazy 0)
+[parameter_bridge-6] [INFO] [1791231303.383370586] [gps_bridge]: Creating GZ->ROS Bridge: [/gps/fix (ignition.msgs.NavSat) -> /gps/fix (sensor_msgs/msg/NavSatFix)] (Lazy 0)
+[parameter_bridge-5] [INFO] [1791231303.384548779] [camera_bridge]: Creating GZ->ROS Bridge: [/camera/depth_image (ignition.msgs.Image) -> /camera/depth_image (sensor_msgs/msg/Image)] (Lazy 0)
+[parameter_bridge-5] [INFO] [1791231303.387814311] [camera_bridge]: Creating GZ->ROS Bridge: [/camera/image (ignition.msgs.Image) -> /camera/image (sensor_msgs/msg/Image)] (Lazy 0)
+[parameter_bridge-5] [INFO] [1791231303.390022946] [camera_bridge]: Creating GZ->ROS Bridge: [/camera/camera_info (ignition.msgs.CameraInfo) -> /camera/camera_info (sensor_msgs/msg/CameraInfo)] (Lazy 0)
+[parameter_bridge-5] [INFO] [1791231303.391589275] [camera_bridge]: Creating GZ->ROS Bridge: [/camera/points (ignition.msgs.PointCloudPacked) -> /camera/points (sensor_msgs/msg/PointCloud2)] (Lazy 0)
+[navigator-11] [INFO] [1791231303.824323042] [waypoint_navigator]: Loaded 1 gps waypoints; waiting for odometry, lidar, depth and GNSS
+[parameter_bridge-2] [INFO] [1791231303.840480125] [motion_bridge]: Passing message from ROS geometry_msgs/msg/Twist to Gazebo gz.msgs.Twist (showing msg only once per type)
+[navigator-11] [INFO] [1791231306.974846295] [waypoint_navigator]: A* path: 5 vertices; goal 1
+[navigator-11] [INFO] [1791231308.020891679] [waypoint_navigator]: A* path: 5 vertices; goal 1
+[navigator-11] [INFO] [1791231311.461740402] [waypoint_navigator]: A* path: 5 vertices; goal 1
+[navigator-11] [INFO] [1791231312.514560513] [waypoint_navigator]: A* path: 5 vertices; goal 1
+[navigator-11] [INFO] [1791231313.564865442] [waypoint_navigator]: A* path: 5 vertices; goal 1
+[navigator-11] [INFO] [1791231314.608613955] [waypoint_navigator]: A* path: 6 vertices; goal 1
+[navigator-11] [INFO] [1791231315.669697016] [waypoint_navigator]: A* path: 4 vertices; goal 1
+[navigator-11] [INFO] [1791231316.699373719] [waypoint_navigator]: A* path: 4 vertices; goal 1
+[navigator-11] [INFO] [1791231318.947960586] [waypoint_navigator]: A* path: 5 vertices; goal 1
+[navigator-11] [INFO] [1791231320.007737405] [waypoint_navigator]: A* path: 5 vertices; goal 1
+[navigator-11] [INFO] [1791231323.445944268] [waypoint_navigator]: A* path: 4 vertices; goal 1
+[navigator-11] [INFO] [1791231324.497915613] [waypoint_navigator]: A* path: 4 vertices; goal 1
+[navigator-11] [INFO] [1791231357.977104995] [waypoint_navigator]: Mission SUCCEEDED: final waypoint reached
+[monitor-13] [INFO] [1791231358.008273039] [mission_monitor]: Finish: 0.19629695478245943 m; obstacle contacts: 0
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='/demo/evidence/matrix/maps/custom_obstacle_course/map.yaml')

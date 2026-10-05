@@ -1,0 +1,68 @@
+{
+  "state": "SUCCEEDED",
+  "xy": [
+    4.8286121604543615,
+    3.083394189549807
+  ],
+  "goal_xy": [
+    4.999999999839758,
+    3.000000000226759
+  ],
+  "goal_error_m": 0.19060005850482575,
+  "waypoints_reached": 2,
+  "sensor_messages": {
+    "pose": 2485,
+    "lidar": 870,
+    "depth": 866,
+    "gps": 435
+  },
+  "elapsed_sim_s": 84.45,
+  "travelled_m": 15.068470556574823,
+  "robot": "turtlebot3",
+  "world": "warehouse",
+  "map_observed_cells": 13206,
+  "plans": 13,
+  "recovering": false,
+  "yaw_rad": -0.4525233226970236,
+  "target_vertex": null,
+  "lidar_front_m": null,
+  "depth_front_m": 2.457005500793457,
+  "ground_truth_xy": [
+    4.826638427984815,
+    3.084356397799838
+  ],
+  "safety": {
+    "reason": "CLEAR",
+    "linear": 0.0,
+    "angular": 0.0
+  },
+  "last_cmd_vel": [
+    0.0,
+    0.0
+  ],
+  "ground_truth_goal_error_m": 0.19279584126096752,
+  "ground_truth_minimum_clearance_m": 0.3209074264272663,
+  "ground_truth_waypoint_min_errors_m": [
+    0.13478031303964855,
+    0.19007733108753053
+  ],
+  "ground_truth_samples": 4353,
+  "contact_sensor_messages": 49521,
+  "obstacle_contact_frames": 0,
+  "validation_passed": true,
+  "ros_domain_id": 146,
+  "validation_wall_s": 92.82,
+  "validation_checks": {
+    "mission_succeeded": true,
+    "all_waypoints_reached": true,
+    "all_waypoints_verified": true,
+    "truth_goal_within_25cm": true,
+    "zero_contacts": true,
+    "contact_stream_observed": true,
+    "truth_stream_observed": true,
+    "sensor_map_built": true,
+    "final_command_zero": true,
+    "all_sensors_observed": true,
+    "report_fresh": true
+  }
+}

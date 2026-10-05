@@ -1,0 +1,46 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.40kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/ros:humble-ros-base-jammy
+#2 DONE 2.9s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 135B done
+#3 DONE 0.0s
+
+#4 [1/6] FROM docker.io/library/ros:humble-ros-base-jammy@sha256:860e53793ccf575e5369b5e9a19939de2bfcfb46a299954d06f54f2af54fed19
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 95.55kB done
+#5 DONE 0.0s
+
+#6 [2/6] RUN apt-get update && apt-get install -y --no-install-recommends curl gnupg lsb-release  && curl -fsSL https://packages.osrfoundation.org/gazebo.gpg -o /usr/share/keyrings/gazebo.gpg  && echo "deb [arch=amd64 signed-by=/usr/share/keyrings/gazebo.gpg] https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy main" > /etc/apt/sources.list.d/gazebo-stable.list  && apt-get update && apt-get install -y --no-install-recommends  ignition-fortress ros-humble-ros-gz-bridge ros-humble-ros-gz-interfaces  ros-humble-robot-state-publisher ros-humble-rviz2 ros-humble-rosbag2  python3-colcon-common-extensions python3-numpy python3-pytest python3-pil python3-xlib  xvfb xauth ffmpeg libgl1-mesa-dri  && rm -rf /var/lib/apt/lists/*
+#6 CACHED
+
+#7 [3/6] RUN useradd --create-home --uid 1000 robot && mkdir /demo && chown robot:robot /demo
+#7 CACHED
+
+#8 [4/6] WORKDIR /demo
+#8 CACHED
+
+#9 [5/6] COPY --chown=robot:robot . /demo
+#9 DONE 0.1s
+
+#10 [6/6] RUN source /opt/ros/humble/setup.bash && colcon build --symlink-install --packages-select robot_demo  && PYTHONPATH=src/robot_demo python3 -m pytest -q src/robot_demo/test
+#10 0.543 Starting >>> robot_demo
+#10 1.360 Finished <<< robot_demo [0.82s]
+#10 1.371
+#10 1.371 Summary: 1 package finished [0.97s]
+#10 1.600 ....................                                                     [100%]
+#10 1.734 20 passed in 0.21s
+#10 DONE 1.8s
+
+#11 exporting to image
+#11 exporting layers 0.1s done
+#11 writing image sha256:e950b1e42d156a057037309d2c96ed9fac50339214ad6200bf6941374e7f91a2 done
+#11 naming to docker.io/library/robot-demo:v2 0.0s done
+#11 DONE 0.1s

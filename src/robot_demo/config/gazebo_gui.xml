@@ -1,0 +1,42 @@
+<gui fullscreen="0">
+  <plugin filename="MinimalScene" name="3D View">
+    <ignition-gui>
+      <title>3D View</title>
+      <property type="bool" key="showTitleBar">false</property>
+      <property type="string" key="state">docked</property>
+    </ignition-gui>
+    <engine>ogre2</engine>
+    <scene>scene</scene>
+    <ambient_light>0.6 0.6 0.6</ambient_light>
+    <background_color>0.88 0.91 0.94</background_color>
+    <camera_pose>0 -9 11 0 0.85 1.5708</camera_pose>
+  </plugin>
+  <plugin filename="GzSceneManager" name="Scene Manager">
+    <ignition-gui>
+      <property key="resizable" type="bool">false</property>
+      <property key="showTitleBar" type="bool">false</property>
+      <property key="state" type="string">floating</property>
+      <property key="width" type="double">5</property>
+      <property key="height" type="double">5</property>
+    </ignition-gui>
+  </plugin>
+  <plugin filename="InteractiveViewControl" name="Interactive View">
+    <ignition-gui>
+      <property key="resizable" type="bool">false</property>
+      <property key="showTitleBar" type="bool">false</property>
+      <property key="state" type="string">floating</property>
+      <property key="width" type="double">5</property>
+      <property key="height" type="double">5</property>
+    </ignition-gui>
+  </plugin>
+  <plugin filename="WorldControl" name="World Control">
+    <ignition-gui>
+      <property key="resizable" type="bool">false</property>
+      <property key="showTitleBar" type="bool">false</property>
+      <property key="state" type="string">floating</property>
+      <property key="width" type="double">5</property>
+      <property key="height" type="double">5</property>
+    </ignition-gui>
+    <start_paused>false</start_paused>
+  </plugin>
+</gui>

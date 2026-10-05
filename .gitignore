@@ -10,3 +10,5 @@ evidence/*.mp4
 
 evidence/mission_report.json
 work/
+
+.ruff_cache/

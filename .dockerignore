@@ -1,0 +1,12 @@
+.git
+.runtime
+build
+install
+log
+work
+evidence
+**/__pycache__
+.pytest_cache
+*.zip
+
+.ruff_cache/

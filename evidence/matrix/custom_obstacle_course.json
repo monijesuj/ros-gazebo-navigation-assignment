@@ -1,0 +1,67 @@
+{
+  "state": "SUCCEEDED",
+  "xy": [
+    4.812996672665086,
+    2.9951278956255094
+  ],
+  "goal_xy": [
+    4.999999999839758,
+    3.000000000226759
+  ],
+  "goal_error_m": 0.1870667842714012,
+  "waypoints_reached": 1,
+  "sensor_messages": {
+    "pose": 1371,
+    "lidar": 480,
+    "depth": 477,
+    "gps": 240
+  },
+  "elapsed_sim_s": 45.900000000000006,
+  "travelled_m": 12.959899988924008,
+  "robot": "custom",
+  "world": "obstacle_course",
+  "map_observed_cells": 13089,
+  "plans": 11,
+  "recovering": false,
+  "yaw_rad": 0.02583456285661343,
+  "target_vertex": null,
+  "lidar_front_m": null,
+  "depth_front_m": null,
+  "ground_truth_xy": [
+    4.8128190373898585,
+    2.9951240503435312
+  ],
+  "safety": {
+    "reason": "CLEAR",
+    "linear": 0.0,
+    "angular": 0.0
+  },
+  "last_cmd_vel": [
+    0.0,
+    0.0
+  ],
+  "ground_truth_goal_error_m": 0.1872444594398846,
+  "ground_truth_minimum_clearance_m": 0.36793310960708725,
+  "ground_truth_waypoint_min_errors_m": [
+    0.1872444595941669
+  ],
+  "ground_truth_samples": 2402,
+  "contact_sensor_messages": 28782,
+  "obstacle_contact_frames": 0,
+  "validation_passed": true,
+  "ros_domain_id": 133,
+  "validation_wall_s": 53.42,
+  "validation_checks": {
+    "mission_succeeded": true,
+    "all_waypoints_reached": true,
+    "all_waypoints_verified": true,
+    "truth_goal_within_25cm": true,
+    "zero_contacts": true,
+    "contact_stream_observed": true,
+    "truth_stream_observed": true,
+    "sensor_map_built": true,
+    "final_command_zero": true,
+    "all_sensors_observed": true,
+    "report_fresh": true
+  }
+}

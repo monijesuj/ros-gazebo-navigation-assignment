@@ -1,0 +1,54 @@
+{
+  "state": "WAITING_FOR_SENSORS",
+  "xy": [
+    -4.6846321593543125,
+    -2.5272934595757204
+  ],
+  "goal_xy": [
+    4.999999999839758,
+    3.000000000226759
+  ],
+  "goal_error_m": 11.150922520117842,
+  "waypoints_reached": 0,
+  "sensor_messages": {
+    "pose": 108,
+    "lidar": 50,
+    "depth": 50,
+    "gps": 10
+  },
+  "elapsed_sim_s": 4.45,
+  "travelled_m": 0.5688765671749385,
+  "robot": "custom",
+  "world": "obstacle_course",
+  "map_observed_cells": 6547,
+  "plans": 2,
+  "recovering": false,
+  "yaw_rad": 1.0147970764661367,
+  "target_vertex": [
+    -3.15,
+    -0.04999999999999982
+  ],
+  "lidar_front_m": 2.6571412086486816,
+  "depth_front_m": 2.3644888639450072,
+  "ground_truth_xy": [
+    -4.672945477777133,
+    -2.5067982249342977
+  ],
+  "safety": {
+    "reason": "SENSOR_TIMEOUT",
+    "linear": 0.0,
+    "angular": 0.0
+  },
+  "last_cmd_vel": [
+    0.0,
+    0.0
+  ],
+  "ground_truth_goal_error_m": 11.130619969506911,
+  "ground_truth_minimum_clearance_m": 1.6829454777771327,
+  "ground_truth_waypoint_min_errors_m": [
+    11.130619969533981
+  ],
+  "ground_truth_samples": 252,
+  "contact_sensor_messages": 2981,
+  "obstacle_contact_frames": 0
+}

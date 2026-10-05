@@ -82,6 +82,18 @@ Visualization Manager:
         History Policy: Keep Last
         Depth: 2
       Normalize Range: true
+    - Class: rviz_default_plugins/PointCloud2
+      Name: Astra depth cloud (optional)
+      Enabled: false
+      Topic:
+        Value: /camera/points
+        Reliability Policy: Best Effort
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Depth: 2
+      Size (m): 0.02
+      Style: Points
+      Color Transformer: RGB8
   Views:
     Current:
       Class: rviz_default_plugins/TopDownOrtho

@@ -1,0 +1,17 @@
+name: ROS Fortress verification
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  clean-mission:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -t robot-demo .
+      - run: docker run --name mission robot-demo
+      - if: always()
+        run: docker cp mission:/demo/evidence ./evidence-ci
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gazebo-evidence
+          path: evidence-ci

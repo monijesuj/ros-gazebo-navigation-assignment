@@ -1,0 +1,109 @@
+{
+  "custom": {
+    "robot_radius": 0.39,
+    "safety_margin": 0.25,
+    "max_speed": 0.32,
+    "wheel_radius": 0.12,
+    "wheel_separation": 0.52,
+    "left_joints": [
+      "left_wheel_joint"
+    ],
+    "right_joints": [
+      "right_wheel_joint"
+    ],
+    "spawn_z": 0.205,
+    "lidar_xyz": [
+      0,
+      0,
+      0.15
+    ],
+    "camera_xyz": [
+      0.29,
+      0,
+      0.08
+    ],
+    "imu_xyz": [
+      0,
+      0,
+      0.1
+    ],
+    "gps_xyz": [
+      0,
+      0,
+      0.12
+    ],
+    "base_height": 0.2
+  },
+  "turtlebot3": {
+    "robot_radius": 0.18,
+    "safety_margin": 0.24,
+    "max_speed": 0.22,
+    "wheel_radius": 0.033,
+    "wheel_separation": 0.16,
+    "left_joints": [
+      "wheel_left_joint"
+    ],
+    "right_joints": [
+      "wheel_right_joint"
+    ],
+    "spawn_z": 0.011,
+    "lidar_xyz": [
+      -0.032,
+      0,
+      0.172
+    ],
+    "camera_xyz": [
+      0.12,
+      0,
+      0.14
+    ],
+    "imu_xyz": [
+      -0.032,
+      0,
+      0.068
+    ],
+    "gps_xyz": [
+      0,
+      0,
+      0.16
+    ],
+    "base_height": 0.01
+  },
+  "jackal": {
+    "robot_radius": 0.36,
+    "safety_margin": 0.25,
+    "max_speed": 0.32,
+    "wheel_radius": 0.098,
+    "wheel_separation": 0.37559,
+    "left_joints": [
+      "front_left_wheel",
+      "rear_left_wheel"
+    ],
+    "right_joints": [
+      "front_right_wheel",
+      "rear_right_wheel"
+    ],
+    "spawn_z": 0.067,
+    "lidar_xyz": [
+      0,
+      0,
+      0.25
+    ],
+    "camera_xyz": [
+      0.23,
+      0,
+      0.21
+    ],
+    "imu_xyz": [
+      0,
+      0,
+      0
+    ],
+    "gps_xyz": [
+      0,
+      0,
+      0.24
+    ],
+    "base_height": 0.0635
+  }
+}

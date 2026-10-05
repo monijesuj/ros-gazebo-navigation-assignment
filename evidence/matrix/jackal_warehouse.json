@@ -1,0 +1,68 @@
+{
+  "state": "SUCCEEDED",
+  "xy": [
+    4.835579833100388,
+    3.104331357199604
+  ],
+  "goal_xy": [
+    4.999999999839758,
+    3.000000000226759
+  ],
+  "goal_error_m": 0.19472807521874594,
+  "waypoints_reached": 2,
+  "sensor_messages": {
+    "pose": 1799,
+    "lidar": 630,
+    "depth": 625,
+    "gps": 315
+  },
+  "elapsed_sim_s": 60.400000000000006,
+  "travelled_m": 15.047913905366595,
+  "robot": "jackal",
+  "world": "warehouse",
+  "map_observed_cells": 13120,
+  "plans": 11,
+  "recovering": false,
+  "yaw_rad": -0.5622712644819948,
+  "target_vertex": null,
+  "lidar_front_m": null,
+  "depth_front_m": null,
+  "ground_truth_xy": [
+    4.83556064567787,
+    3.1043114373000575
+  ],
+  "safety": {
+    "reason": "CLEAR",
+    "linear": 0.0,
+    "angular": 0.0
+  },
+  "last_cmd_vel": [
+    0.0,
+    0.0
+  ],
+  "ground_truth_goal_error_m": 0.19473360547546886,
+  "ground_truth_minimum_clearance_m": 0.32341750157327465,
+  "ground_truth_waypoint_min_errors_m": [
+    0.041421718901389536,
+    0.19473360573224832
+  ],
+  "ground_truth_samples": 3152,
+  "contact_sensor_messages": 50376,
+  "obstacle_contact_frames": 0,
+  "validation_passed": true,
+  "ros_domain_id": 129,
+  "validation_wall_s": 69.44,
+  "validation_checks": {
+    "mission_succeeded": true,
+    "all_waypoints_reached": true,
+    "all_waypoints_verified": true,
+    "truth_goal_within_25cm": true,
+    "zero_contacts": true,
+    "contact_stream_observed": true,
+    "truth_stream_observed": true,
+    "sensor_map_built": true,
+    "final_command_zero": true,
+    "all_sensors_observed": true,
+    "report_fresh": true
+  }
+}

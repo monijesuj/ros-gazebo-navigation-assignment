@@ -1,0 +1,118 @@
+{
+  "bag": "bag_20261005_230800",
+  "topic_count": 21,
+  "message_counts": {
+    "/mission/verification": 76,
+    "/imu/data": 3752,
+    "/localization/pose": 2139,
+    "/joint_states": 14929,
+    "/cmd_vel/nav": 1501,
+    "/map": 149,
+    "/cmd_vel": 1547,
+    "/gps/fix": 375,
+    "/travelled_path": 76,
+    "/tf_static": 1,
+    "/tf": 1430,
+    "/clock": 14944,
+    "/scan": 751,
+    "/safety/status": 278,
+    "/robot_description": 1,
+    "/camera/camera_info": 751,
+    "/camera/depth_image": 751,
+    "/mission/status": 76,
+    "/odom": 2144,
+    "/planned_path": 10,
+    "/camera/image": 751
+  },
+  "duration_s": 75.055,
+  "timestamp_range_s": [
+    0.01,
+    75.065
+  ],
+  "final_mission": {
+    "state": "SUCCEEDED",
+    "xy": [
+      4.809182066723553,
+      2.995016774952282
+    ],
+    "goal_xy": [
+      4.999999999839758,
+      3.000000000226759
+    ],
+    "goal_error_m": 0.19088299068507106,
+    "waypoints_reached": 1,
+    "sensor_messages": {
+      "pose": 2137,
+      "lidar": 750,
+      "depth": 637,
+      "gps": 375
+    },
+    "elapsed_sim_s": 45.85,
+    "travelled_m": 12.953681979324958,
+    "robot": "custom",
+    "world": "obstacle_course",
+    "map_observed_cells": 13053,
+    "plans": 10,
+    "recovering": false,
+    "yaw_rad": 0.025868461145441488,
+    "target_vertex": null,
+    "lidar_front_m": null,
+    "depth_front_m": null
+  },
+  "final_verification": {
+    "state": "SUCCEEDED",
+    "xy": [
+      4.809182066723553,
+      2.995016774952282
+    ],
+    "goal_xy": [
+      4.999999999839758,
+      3.000000000226759
+    ],
+    "goal_error_m": 0.19088299068507106,
+    "waypoints_reached": 1,
+    "sensor_messages": {
+      "pose": 2137,
+      "lidar": 750,
+      "depth": 637,
+      "gps": 375
+    },
+    "elapsed_sim_s": 45.85,
+    "travelled_m": 12.953681979324958,
+    "robot": "custom",
+    "world": "obstacle_course",
+    "map_observed_cells": 13053,
+    "plans": 10,
+    "recovering": false,
+    "yaw_rad": 0.025868461145441488,
+    "target_vertex": null,
+    "lidar_front_m": null,
+    "depth_front_m": null,
+    "ground_truth_xy": [
+      4.809178981099068,
+      2.995019587877888
+    ],
+    "safety": {
+      "reason": "CLEAR",
+      "linear": 0.0,
+      "angular": 0.0
+    },
+    "last_cmd_vel": [
+      0.0,
+      0.0
+    ],
+    "ground_truth_goal_error_m": 0.1908860018450796,
+    "ground_truth_minimum_clearance_m": 0.3668499967271073,
+    "ground_truth_waypoint_min_errors_m": [
+      0.19088600199935027
+    ],
+    "ground_truth_samples": 3858,
+    "contact_sensor_messages": 44960,
+    "obstacle_contact_frames": 0
+  },
+  "final_command": [
+    0.0,
+    0.0
+  ],
+  "validation_passed": true
+}

@@ -16,9 +16,12 @@ export FASTRTPS_DEFAULT_PROFILES_FILE="$PWD/src/robot_demo/config/fastdds_udp.xm
 export IGN_PARTITION="${IGN_PARTITION:-robot_demo}"
 # Gazebo/ROS caches stay inside the repository for sandboxed execution.
 export HOME="$PWD/.runtime"
+export GSETTINGS_BACKEND="${GSETTINGS_BACKEND:-memory}"
 if [[ "${ROBOT_DEMO_SOFTWARE_RENDERING:-0}" == 1 ]]; then
   export LIBGL_ALWAYS_SOFTWARE=1 __GLX_VENDOR_LIBRARY_NAME=mesa
 fi
-colcon build --symlink-install --packages-select robot_demo
+if [[ "${ROBOT_DEMO_SKIP_BUILD:-0}" != 1 ]]; then
+  colcon build --symlink-install --packages-select robot_demo
+fi
 source install/setup.bash
 exec ros2 launch robot_demo demo.launch.py report_file:="$PWD/evidence/mission_report.json" "$@"

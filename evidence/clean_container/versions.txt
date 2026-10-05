@@ -1,0 +1,4 @@
+libignition-gazebo6:amd64	6.18.0-1~jammy
+ros-humble-rclpy	3.3.22-1jammy.20260907.213431
+ros-humble-ros-gz-bridge	0.244.26-1jammy.20260907.225444
+Python 3.10.12

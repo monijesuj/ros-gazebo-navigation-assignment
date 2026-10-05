@@ -1,0 +1,78 @@
+[INFO] [launch]: All log files can be found below /home/monijesu/Documents/Codex/2026-10-05/l/outputs/ros-gazebo-navigation/.runtime/log/2026-10-05-22-57-48-189407-monijesu-1031
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [ign-1]: process started with pid [1059]
+[INFO] [parameter_bridge-2]: process started with pid [1061]
+[INFO] [parameter_bridge-3]: process started with pid [1063]
+[INFO] [parameter_bridge-4]: process started with pid [1065]
+[INFO] [parameter_bridge-5]: process started with pid [1067]
+[INFO] [parameter_bridge-6]: process started with pid [1069]
+[INFO] [parameter_bridge-7]: process started with pid [1071]
+[INFO] [robot_state_publisher-8]: process started with pid [1073]
+[INFO] [localizer-9]: process started with pid [1075]
+[INFO] [mapper-10]: process started with pid [1077]
+[INFO] [navigator-11]: process started with pid [1079]
+[INFO] [guard-12]: process started with pid [1081]
+[INFO] [monitor-13]: process started with pid [1083]
+[robot_state_publisher-8] [INFO] [1791230268.453211904] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-8] [INFO] [1791230268.453304006] [robot_state_publisher]: got segment camera_link
+[robot_state_publisher-8] [INFO] [1791230268.453311112] [robot_state_publisher]: got segment camera_optical_link
+[robot_state_publisher-8] [INFO] [1791230268.453315268] [robot_state_publisher]: got segment chassis_link
+[robot_state_publisher-8] [INFO] [1791230268.453318870] [robot_state_publisher]: got segment front_caster
+[robot_state_publisher-8] [INFO] [1791230268.453322582] [robot_state_publisher]: got segment gps_link
+[robot_state_publisher-8] [INFO] [1791230268.453326275] [robot_state_publisher]: got segment imu_link
+[robot_state_publisher-8] [INFO] [1791230268.453329770] [robot_state_publisher]: got segment left_wheel
+[robot_state_publisher-8] [INFO] [1791230268.453333322] [robot_state_publisher]: got segment lidar_link
+[robot_state_publisher-8] [INFO] [1791230268.453336803] [robot_state_publisher]: got segment rear_caster
+[robot_state_publisher-8] [INFO] [1791230268.453340295] [robot_state_publisher]: got segment right_wheel
+[parameter_bridge-7] [INFO] [1791230268.485993158] [imu_bridge]: Creating GZ->ROS Bridge: [/imu/data (ignition.msgs.IMU) -> /imu/data (sensor_msgs/msg/Imu)] (Lazy 0)
+[parameter_bridge-5] [INFO] [1791230268.488683887] [camera_bridge]: Creating GZ->ROS Bridge: [/camera/depth_image (ignition.msgs.Image) -> /camera/depth_image (sensor_msgs/msg/Image)] (Lazy 0)
+[parameter_bridge-5] [INFO] [1791230268.491136115] [camera_bridge]: Creating GZ->ROS Bridge: [/camera/image (ignition.msgs.Image) -> /camera/image (sensor_msgs/msg/Image)] (Lazy 0)
+[parameter_bridge-5] [INFO] [1791230268.492005995] [camera_bridge]: Creating GZ->ROS Bridge: [/camera/camera_info (ignition.msgs.CameraInfo) -> /camera/camera_info (sensor_msgs/msg/CameraInfo)] (Lazy 0)
+[parameter_bridge-5] [INFO] [1791230268.493029661] [camera_bridge]: Creating GZ->ROS Bridge: [/camera/points (ignition.msgs.PointCloudPacked) -> /camera/points (sensor_msgs/msg/PointCloud2)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1791230268.508416906] [motion_bridge]: Creating GZ->ROS Bridge: [/clock (ignition.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1791230268.509295474] [motion_bridge]: Creating ROS->GZ Bridge: [/cmd_vel (geometry_msgs/msg/Twist) -> /cmd_vel (ignition.msgs.Twist)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1791230268.510963778] [motion_bridge]: Creating GZ->ROS Bridge: [/odom (ignition.msgs.Odometry) -> /odom (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1791230268.512994591] [motion_bridge]: Creating GZ->ROS Bridge: [/tf (ignition.msgs.Pose_V) -> /tf (tf2_msgs/msg/TFMessage)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1791230268.515517443] [motion_bridge]: Creating GZ->ROS Bridge: [/joint_states (ignition.msgs.Model) -> /joint_states (sensor_msgs/msg/JointState)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1791230268.515949231] [lidar_bridge]: Creating GZ->ROS Bridge: [/scan (ignition.msgs.LaserScan) -> /scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[parameter_bridge-6] [INFO] [1791230268.517422410] [gps_bridge]: Creating GZ->ROS Bridge: [/gps/fix (ignition.msgs.NavSat) -> /gps/fix (sensor_msgs/msg/NavSatFix)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1791230268.526021064] [verification_bridge]: Creating GZ->ROS Bridge: [/world/navigation/dynamic_pose/info (ignition.msgs.Pose_V) -> /world/navigation/dynamic_pose/info (tf2_msgs/msg/TFMessage)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1791230268.529675046] [verification_bridge]: Creating GZ->ROS Bridge: [/contacts/base_link (ignition.msgs.Contacts) -> /contacts/base_link (ros_gz_interfaces/msg/Contacts)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1791230268.532454894] [verification_bridge]: Creating GZ->ROS Bridge: [/contacts/left_wheel (ignition.msgs.Contacts) -> /contacts/left_wheel (ros_gz_interfaces/msg/Contacts)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1791230268.533584976] [verification_bridge]: Creating GZ->ROS Bridge: [/contacts/right_wheel (ignition.msgs.Contacts) -> /contacts/right_wheel (ros_gz_interfaces/msg/Contacts)] (Lazy 0)
+[navigator-11] [INFO] [1791230268.861911306] [waypoint_navigator]: Loaded 1 gps waypoints; waiting for odometry, lidar, depth and GNSS
+[parameter_bridge-2] [INFO] [1791230268.877104580] [motion_bridge]: Passing message from ROS geometry_msgs/msg/Twist to Gazebo gz.msgs.Twist (showing msg only once per type)
+[navigator-11] [INFO] [1791230271.972849975] [waypoint_navigator]: A* path: 5 vertices; goal 1
+[navigator-11] [INFO] [1791230273.027673606] [waypoint_navigator]: A* path: 5 vertices; goal 1
+[ERROR] [parameter_bridge-6]: process has died [pid 1069, exit code -9, cmd '/home/monijesu/Documents/Codex/2026-10-05/l/work/deps/opt/ros/humble/lib/ros_gz_bridge/parameter_bridge /gps/fix@sensor_msgs/msg/NavSatFix[ignition.msgs.NavSat --ros-args -r __node:=gps_bridge --params-file /tmp/launch_params_zpfq4wt7'].
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [monitor-13]: sending signal 'SIGINT' to process[monitor-13]
+[INFO] [guard-12]: sending signal 'SIGINT' to process[guard-12]
+[INFO] [navigator-11]: sending signal 'SIGINT' to process[navigator-11]
+[INFO] [mapper-10]: sending signal 'SIGINT' to process[mapper-10]
+[INFO] [localizer-9]: sending signal 'SIGINT' to process[localizer-9]
+[INFO] [robot_state_publisher-8]: sending signal 'SIGINT' to process[robot_state_publisher-8]
+[INFO] [parameter_bridge-7]: sending signal 'SIGINT' to process[parameter_bridge-7]
+[INFO] [parameter_bridge-5]: sending signal 'SIGINT' to process[parameter_bridge-5]
+[INFO] [parameter_bridge-4]: sending signal 'SIGINT' to process[parameter_bridge-4]
+[INFO] [parameter_bridge-3]: sending signal 'SIGINT' to process[parameter_bridge-3]
+[INFO] [parameter_bridge-2]: sending signal 'SIGINT' to process[parameter_bridge-2]
+[INFO] [ign-1]: sending signal 'SIGINT' to process[ign-1]
+[robot_state_publisher-8] [INFO] [1791230276.840937459] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[parameter_bridge-7] [INFO] [1791230276.842321702] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[parameter_bridge-5] [INFO] [1791230276.843845876] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[parameter_bridge-4] [INFO] [1791230276.845101314] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[parameter_bridge-3] [INFO] [1791230276.846409584] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[parameter_bridge-2] [INFO] [1791230276.847551666] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [ign-1]: process has finished cleanly [pid 1059]
+[INFO] [parameter_bridge-7]: process has finished cleanly [pid 1071]
+[INFO] [robot_state_publisher-8]: process has finished cleanly [pid 1073]
+[INFO] [parameter_bridge-5]: process has finished cleanly [pid 1067]
+[INFO] [parameter_bridge-4]: process has finished cleanly [pid 1065]
+[INFO] [parameter_bridge-3]: process has finished cleanly [pid 1063]
+[INFO] [parameter_bridge-2]: process has finished cleanly [pid 1061]
+[INFO] [guard-12]: process has finished cleanly [pid 1081]
+[INFO] [mapper-10]: process has finished cleanly [pid 1077]
+[INFO] [localizer-9]: process has finished cleanly [pid 1075]
+[INFO] [monitor-13]: process has finished cleanly [pid 1083]
+[INFO] [navigator-11]: process has finished cleanly [pid 1079]
